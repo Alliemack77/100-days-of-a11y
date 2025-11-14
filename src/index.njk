@@ -1,0 +1,14 @@
+--- 
+title: Home
+layout: _base
+--- 
+
+{% include '_header.njk'  %}
+
+<main class="container px-4">
+  <ol class="list-decimal marker:text-violet-400 marker:text-[2rem] marker:hover:shadow-2xl">
+    {%- for post in collections.post -%}
+      {%- include '_post-card.njk' -%}
+    {%- endfor -%}
+  </ol>
+</main>

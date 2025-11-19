@@ -15,16 +15,25 @@ export default function (eleventyConfig) {
   } )
 
   // add all tags from every post for pagination
-  // eleventyConfig.addCollection("tagList", function(collectionApi) {
-  //   const tags = new Set()
-  //   const tagList = collectionApi.getAll()
+  eleventyConfig.addCollection("tagList", function(collectionApi) {
+    const tags = new Set()
+    const tagList = collectionApi.getAll()
 
-  //   tagList.forEach(item => {
-  //     (item.data.tags || []).forEach(t => tags.add(t))
-  //   })
+    tagList.forEach(item => {
+      let itemTags = item.data.tags
+      if(!itemTags) return
+      if(!Array.isArray(itemTags)) itemTags = [itemTags]
+      itemTags.forEach(tag => {
+        if (typeof tag !== "string") return
+        const cleaned = tag.trim()
+        if(!cleaned) return
+        if(cleaned === "all" || cleaned === "post") return
+        tags.add(cleaned)
+      })
+    })
 
-  //   return Array.from(tags)
-  // })
+    return Array.from(tags).sort()
+  })
 
 
   return {

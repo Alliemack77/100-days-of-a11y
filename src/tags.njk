@@ -3,7 +3,7 @@ eleventyComputed:
     title: Posts Tagged with {{ tag }}
 layout: _base.njk
 pagination:
-    data: collections
+    data: collections.tagList
     size: 1
     alias: tag
     permalink: /tags/{{ tag | slugify }}/

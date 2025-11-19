@@ -32,7 +32,8 @@ export default function (eleventyConfig) {
       })
     })
 
-    return Array.from(tags).sort()
+    const result = Array.from(tags).sort()
+    return result
   })
 
 

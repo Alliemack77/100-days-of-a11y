@@ -11,8 +11,10 @@ layout: _base
     <ul class="flex gap-4 text-violet-400 italic pt-8 pb-16">
         {# uses custom filter - in config file - to remove "post" tag from every tag list #}
         {%- for tag in tags | filteredTagList -%}
-        {# {%- set tagUrl -%}/tags/{{ tag.indexOf() | slugify }}/{%- endset -%} #}
-            <li><a class="transition ease-in-out hover:text-white" href="/tags/{{ tag | slugify }}">#{{ tag }}</a></li>
+        {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
+            <li>
+                <a class="transition ease-in-out hover:text-white" href="{{ tagUrl }}">#{{ tag }}</a>
+            </li>
         {%- endfor -%}
     </ul>
 

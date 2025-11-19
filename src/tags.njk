@@ -1,12 +1,12 @@
 ---
 eleventyComputed:
-    title: Posts Tagged with {{ tag }}
+    title: Posts Tagged with "{{ tag }}"
 layout: _base.njk
+permalink: /tags/{{ tag | slugify }}/
 pagination:
     data: collections.tagList
     size: 1
     alias: tag
-    permalink: /tags/{{ tag | slugify }}/
     addAllPagesToCollections: true
 ---
 

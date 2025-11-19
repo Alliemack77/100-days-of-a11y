@@ -614,6 +614,10 @@ video {
   max-width: 65ch;
 }
 
+.list-outside {
+  list-style-position: outside;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }

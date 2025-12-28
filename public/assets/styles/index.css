@@ -622,6 +622,10 @@ video {
   list-style-type: decimal;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -660,20 +664,28 @@ video {
   padding-bottom: 8rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
 .pb-32 {
   padding-bottom: 8rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -735,10 +747,6 @@ video {
   text-underline-offset: 8px;
 }
 
-.underline-offset-4 {
-  text-underline-offset: 4px;
-}
-
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -761,15 +769,13 @@ body {
   color: hsl(0 0% 100%);
 }
 
-h2, 
-h1 a {
+h1 {
   position: relative;
   padding: 0 5rem;
   text-shadow: 4px 3px hsl(222 47% 11%);
 }
 
-h1 a::before,
-h2::before {
+h1::before {
   content: "";
   position:  absolute;
   inset: 0;

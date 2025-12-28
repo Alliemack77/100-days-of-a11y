@@ -5,10 +5,10 @@ layout: _base
 {% include '_navigation.njk' %}
 
 <main class="flex flex-col items-center">
-    <h2 class="font-bold text-center text-2xl md:text-3xl lg:text-4xl">{{title}}</h2>
+    <h1 class="font-bold text-center text-2xl md:text-3xl lg:text-4xl">{{title}}</h1>
     <p class="text-[#16b6ff] pt-4">{{postDate}}</p>
 
-    <ul class="flex gap-4 text-violet-400 italic pt-8 pb-16">
+    <ul class="flex gap-4 text-violet-400 italic pt-4 pb-32">
         {# uses custom filter - in config file - to remove "post" tag from every tag list #}
         {%- for tag in tags | filteredTagList -%}
         {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}

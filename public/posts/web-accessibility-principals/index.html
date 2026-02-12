@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/assets/styles/index.css">
+
+    <title>Web Accessibility Principals | 100 Days of Accessibility</title>
+</head>
+<body>
+    
+    <div class="container max-w-5xl mx-auto min px-4" >
+        
+<header class="container flex justify-between mx-auto p-16 pb-32">
+    <a href="/" class="text-base underline underline-offset-8 decoration-[#36ffe5] ">
+        100 Days of Accessibility
+    </a>
+    <nav>
+        <ul>
+            <li class="text-base text-[#16b6ff]">
+                <a href="/" class="transition ease-in-out hover:underline underline-offset-8 hover:text-white">Back to all posts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="flex flex-col items-center">
+    <h1 class="font-bold text-center text-2xl md:text-3xl lg:text-4xl">Web Accessibility Principals</h1>
+    <p class="text-[#16b6ff] pt-4">11 February 2026</p>
+
+    <ul class="flex flex-wrap gap-4 text-violet-400 italic pt-4 pb-32">
+        <li>
+                <a class="transition ease-in-out hover:text-white" href="/tags/principals/">#principals</a>
+            </li><li>
+                <a class="transition ease-in-out hover:text-white" href="/tags/pour/">#pour</a>
+            </li></ul>
+
+    
+<section class="flex flex-col">
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8"><a class="underline underline-offset-8 text-violet-400 hover:text-white" href="https://www.w3.org/TR/WCAG20/">WCAG 2.1</a> outlines four main principals of web accessibility. There are 13 guidelines organized under the four principals. The four principals are:</p>
+    
+    <ul class="list-disc text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8 ml-8">
+        <li class="mb-4"><strong>P</strong>erceivable</li>
+        <li class="mb-4"><strong>O</strong>perable</li>
+        <li class="mb-4"><strong>U</strong>nderstandable</li>
+        <li class="mb-4"><strong>R</strong>obust</li>
+    </ul>
+
+    <h2 class="font-bold text-center text-xl md:text-3xl lg:text-4xl text-violet-400 mb-8">Perceivable</h2>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Perceivability is about making the output of web content available through more than one of the five senses. On the web, accessibility is really only concerned with sight, sound, and touch. There are four guidelines under the Perceivable principal:</p>
+
+    <ul class="list-disc text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8 ml-8">
+        <li class="mb-4">provide text alternatives for non-text content</li>
+        <li class="mb-4">provide captions and other alternatives for multimedia</li>
+        <li class="mb-4">create content that can be presented in different ways, including by assistive tech, without loosing meaning</li>
+        <li class="mb-4">make it easier for users to see and hear content</li>
+    </ul>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">If web content is not perceivable, it may as well not exist. It's important to provide acceptable alternatives that work for people who are blind, deaf or both. Providing captions or digital transcripts, text descriptions for images and using semantic elements that can be understood by screen readers are simple ways to make content perceivable.</p>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Digital text is the most universally accepted format available because it can be converted into all the other useful sensory formats - converted to speech, braille, and as visual text.</p>
+
+    <h2 class="font-bold text-center text-xl md:text-3xl lg:text-4xl text-violet-400 mb-8">Operable</h2>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Operability is about making the input methods of web content functionally available to a wide range of input devices, including: mouse/touchpad, keyboard, touchscreen, voice recognition software, and other specialized input devices. There are 4 guidelines under the Operable principal: </p>
+
+    <ul class="list-disc text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8 ml-8">
+        <li class="mb-4">make all functionality available from a keyboard</li>
+        <li class="mb-4">give users enough time to read and use content</li>
+        <li class="mb-4">do not use content that causes seizures or physical reactions</li>
+        <li class="mb-4">help users navigate and find content</li>
+    </ul>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">The goal of operability is to make sure web components work, especially navigation and dynamic or interactive components, no matter what device they are using. If content is not available for a given device, it is essentially broken even if it's available through another input device.</p>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Pay attention to focus states and never remove a default focus style without replacing it with another. Be sure that people have enough time to interact with content. Don't force session timeouts. Timeouts are allowable as long as the user gets sufficient warning. Just be sure the popup is accessible.</p>
+
+    <h2 class="font-bold text-center text-xl md:text-3xl lg:text-4xl text-violet-400 mb-8">Understandable</h2>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Understandability is about making content and interfaces that people can comprehend. There are three guidelines under this principal:</p>
+
+    <ul class="list-disc text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8 ml-8">
+        <li class="mb-4">make text readable and understandable</li>
+        <li class="mb-4">make content appear and operate in predictable ways</li>
+        <li class="mb-4">help users avoid and correct mistakes</li>
+    </ul>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">The language of webpages should always be specified in the markup using the <code>lang</code> attribute. This way screen readers will use the pronunciation of the specified language. Screen readers will not automatically switch between two languages unless the web page it's on has a new language specified. It's possible to add the <code>lang</code> attribute to any piece of text.</p>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Be sure to keep content at a 8th or 9th grade reading level. Reading disorders are common, so things like long or unfamiliar words, long sentences, unclear wording, long passages of text and lines that are too close to each other can make it difficult for people to read.</p>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Maintain a consistent look and feel across different pages. The visual layout and reading order should not change drastically from page to page. The main navigation should contain the same links site wide and form controls (especially custom controls) should behave in a standard way. </p>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">When asking for user input, provide instructions, hints and contextual help. Constraints like required fields, disabled buttons, data formatted in a certain way (dates), password requirements, and others should be visibly noted next to the field. Confirmation and error messages should accompany form submissions, especailly those that submit data to a server. Ensure messages are available to sighted and screen reader users, without having them hunt for the message. You can do this by sending focus immediately to the message or by placing the message in an alert dialog.</p>
+
+    <h2 class="font-bold text-center text-xl md:text-3xl lg:text-4xl text-violet-400 mb-8">Robust</h2>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Robustness is about ensuring compatibility with a broad range of browsers, including assistive tech. Because there are many different browsers and devices each with their own versions, it's impossible to support them all. You'll have to draw a line at which ones you'll support. The Robust principal has one guideline:</p>
+
+    <ul class="list-disc text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8 ml-8">
+        <li class="mb-4">maximize compatibility with current and future tools</li>
+    </ul>
+
+    <p class="text-lg/loose md:text-xl/loose lg:text-2xl/loose max-w-prose mb-8">Using standard markup is the best way to ensure a website is robust. However valid code isn't inherently accessible, but it's a step in the right direction when trying to make pages more accessible. Use sematic markup and add ARIA when additional semantics are needed. </p>
+    
+
+</section>
+
+</main>
+
+
+    </div><footer class="bg-violet-300 mt-64 p-32">
+     <p class="text-[#0f1729] text-center max-w-prose mx-auto">&#169; 2026 Made with <span>&#x2764;</span> and <a href="https://www.11ty.dev/">11ty</a>!</p>
+</footer></body>
+</html>
